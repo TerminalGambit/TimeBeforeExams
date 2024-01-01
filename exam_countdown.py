@@ -23,9 +23,5 @@ def index():
 
     return render_template('index.html', time_left_list=time_left_list)
 
-@app.route('/test')
-def test():
-    return 'Test page is working!'
-
 if __name__ == '__main__':
     app.run(debug=True)
