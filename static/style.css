@@ -1,30 +1,49 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A more elegant font */
+    background-color: #eaecef; /* A softer background color */
+    color: #333; /* Standard text color */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: center;
 }
 
 h1 {
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 2.5em; /* Larger font size for the header */
+    color: #2c3e50; /* Darker color for contrast */
+    margin-bottom: 30px;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+    max-width: 600px; /* Limit the width of the list */
 }
 
 li {
-    background-color: #f0f5ff;
-    border: 1px solid #c2d4ef;
-    margin-bottom: 10px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: linear-gradient(145deg, #ffffff, #f0f5ff); /* Subtle gradient for each list item */
+    border: none;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.7); /* Soft inner and outer shadows */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+li:hover {
+    transform: translateY(-5px); /* Slightly raise the list item on hover */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(255, 255, 255, 0.8); /* Enhanced shadow on hover */
+}
+
+@media (max-width: 768px) {
+    body, ul {
+        padding: 10px;
+        height: auto; /* Better mobile compatibility */
+    }
+    h1 {
+        font-size: 2em; /* Smaller font size on mobile devices */
+    }
 }
