@@ -16,7 +16,7 @@ def index():
     time_left_list = []
 
     for exam_date in exam_dates:
-        exam_datetime = datetime.strptime(exam_date, "%d/%m/%Y %H:%M %S")
+        exam_datetime = datetime.strptime(exam_date, "%d/%m/%Y %H:%M")
         time_left = exam_datetime - current_date
         time_left_list.append(f"Time left until {exam_date[11:]}: {time_left}")
 
