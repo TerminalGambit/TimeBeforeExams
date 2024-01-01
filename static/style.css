@@ -1,20 +1,23 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A more elegant font */
-    background-color: #eaecef; /* A softer background color */
-    color: #333; /* Standard text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaecef;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Align items in a column */
+    justify-content: flex-start; /* Start items from the top */
     align-items: center;
     height: 100vh;
     text-align: center;
 }
 
 h1 {
-    font-size: 2.5em; /* Larger font size for the header */
-    color: #2c3e50; /* Darker color for contrast */
-    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-top: 20px; /* Add top margin */
+    margin-bottom: 20px;
+    width: 100%; /* Full width */
+    text-align: center; /* Center the text */
 }
 
 ul {
