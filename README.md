@@ -15,5 +15,4 @@ To run this application, you need Python and Flask. If you haven't installed Pyt
 First, clone the repository or download the source code to your local machine. Navigate to the project directory in your terminal or command prompt.
 
 1. **Install Flask** (skip if you already have Flask installed):
-   ```bash
    pip install Flask
